@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ProjectManagementAPI.Models
+﻿namespace ProjectManagementAPI.Models
 {
-    public partial class Role
+    public class Role
     {
         public int Id { get; set; }
-        public string? RoleName { get; set; }
+        public string Name { get; set; }
     }
 }

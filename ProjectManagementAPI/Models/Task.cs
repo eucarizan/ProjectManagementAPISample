@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ProjectManagementAPI.Models
+﻿namespace ProjectManagementAPI.Models
 {
-    public partial class Task
+    public class Task
     {
         public int Id { get; set; }
-        public string? TaskName { get; set; }
-        public int? ProjectId { get; set; }
-        public int? Priority { get; set; }
-        public string? Description { get; set; }
-        public DateTime? PlannedStartDate { get; set; }
-        public DateTime? PlannedEndDate { get; set; }
-        public decimal? PlannedBudget { get; set; }
-        public DateTime? ActualStartTime { get; set; }
-        public DateTime? ActualEndTime { get; set; }
-        public decimal? ActualBudget { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public int AssignedId { get; set; }
     }
 }
